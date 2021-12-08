@@ -23,11 +23,11 @@ plt.style.use('fivethirtyeight')
 plt.figure(figsize=(400,8))
 plt.xlabel("County")
 plt.ylabel("Regular Gross Paid($)")
-plt.tick_params(axis="x",labelsize=8)
+plt.tick_params(axis="x",labelsize=14)
 borough=df[["Work Location Borough","Regular Gross Paid"]]
 borough["Work Location Borough"]=borough["Work Location Borough"].str.lower()
 borough=borough.groupby("Work Location Borough").mean()
-plt.bar(borough.index,borough['Regular Gross Paid'],align="edge",width=0.3)
+plt.bar(borough.index,borough['Regular Gross Paid'],align="edge")#,width=0.3)
 plt.savefig("static/graph2.png",bbox_inches="tight")
 plt.show()
 #table 3
