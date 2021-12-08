@@ -7,8 +7,8 @@
     <link rel="canonical" href="https://html5-templates.com/" />
 	<title>Analysis of Public Sector Salaries</title>
     <meta name="description" content="Data Analysis of Public Sector Salaries">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/sticky-menu.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/sticky-menu.css')}}" rel="stylesheet">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -76,9 +76,9 @@
                     <h1>Data Analysis of Public Sector Salaries</h1>
 					Here is average gross money paid per year.
 					<br>
-					<img src="{{url_for('static',filename='graph.png')}}"/>
+					<img src="{{url_for('static',filename='graph.png')}}" width="1000" height="600"/>
 					<br>
-					<img src="{{url_for('static',filename='graph2.png')}}"/>
+					<img src="{{url_for('static',filename='graph2.png')}} "width="2400" height="600"/>
 					<br>
 					More graphs to come...
                 </div>
@@ -100,14 +100,14 @@
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
 
     <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/sticky-menu.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/sticky-menu.js')}}"></script>
 
 </body>
 </html>
