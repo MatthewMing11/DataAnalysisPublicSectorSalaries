@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Welcome</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -29,60 +29,115 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#overview">Overview</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#whatwedo">What We Do</a>
+                        <a class="page-scroll" href="#graph">Graphs</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#data">Data</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#techniques">Techniques</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#citations">Citations</a>
                     </li>
                 </ul>
             </div>	<!-- .navbar-collapse -->
         </div>		<!-- .container -->
     </nav>
-    <!-- Welcome   -->
-    <section id="welcome" class="welcome-section">
+    <!-- Home   -->
+    <section id="home" class="home-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                   <!-- <h1>Bootstrap Sticky Scrolling Menu</h1>
-                    <p>Responsive one-page scrolling template with sticky menu on the top of the page. The active page gets highlighted as the user scrolls on the page or selects an option in the menu.</p>
-					<p>A back to top arrow fades in as the user starts scrolling down the page which takes back to the welcome screen with one click.</p>
-					<p>You can edit and publish this template but please leave a reference to <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a>. Thank You!</p>
-					<p>&nbsp;</p>
-                    <a class="btn btn-primary page-scroll" href="#about">Click To Scroll Down!</a>-->
+                	<br>
+                	<br>
+                	<br>
+                	<br>
+                	<br>
+                	<h1>Data Analysis of Public Sector Salaries Over Time</h1>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about-section">
+    <!-- Overview -->
+    <section id="overview" class="overview-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About</h1>
+                    <h1>Overview</h1>
+                    <p>My underlying hypothesis was that salaries in NYC were gradually increasing over the years and that the impact of the CoVID-19 pandemic would slightly decrease the salaries. To explore this, I used pandas and numpy to preprocess the data and used matplotlib and seaborn to display them as charts and to style the charts. From what I found, my hypothesis was correct, though in the year 2015, the salaries dipped.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What we do Section -->
-    <section id="whatwedo" class="whatwedo-section">
+    <!-- Graphs Section -->
+    <section id="graph" class="graph-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Data Analysis of Public Sector Salaries</h1>
-					Here is average gross money paid per year.
+                    <h1>Graphs</h1>
+					<p>Here is average gross salary per year.</p>
 					<br>
 					<img src="{{url_for('static',filename='graph.png')}}" width="1000" height="600"/>
 					<br>
-					<img src="{{url_for('static',filename='graph2.png')}} "width="2400" height="600"/>
 					<br>
-					More graphs to come...
+					<br>
+					<p>Here is average gross salary per year per borough.</p>
+					<br>
+					<img src="{{url_for('static',filename='graph2.png')}} "width="1000" height="600"/>
+					<br>
+					<br>
+					<br>
+					<p>Here is the total average salary per borough.</p>
+					<br>
+					<img src="{{url_for('static',filename='graph3.png')}} "width="1000" height="600"/>
                 </div>
             </div>
         </div>
     </section>
-	
+    <!-- Data -->
+    <section id="data" class="data-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Data</h1>
+                    <p>The only data used for the above graphs is the Citywide Payroll Data from NYC Opendata. It contains data detailing payrolls of individuals from multiple different public sectors from each fiscal year from 2014 to 2020, inclusively. Though there was personal identifiable information provided, such as the name of the individual logged, this was not used within my graphs as more focus was placed on their salary and how it changed over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- Techniques -->
+    <section id="techniques" class="technique-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Techniques</h1>
+                    <p>For all graphs, I processed the data into a dataframe and capitalized all work locations. With graph#1, I grouped it by year and calculated mean salaries for each year. With these values, I plotted and styled using Matplotlib to get a line chart that showed the trend as salaries changed over the years. For graph#2, I created a pivot table using the work locations, year, and salary. With this table, I extracted only the Boroughs needed as they best represent New York City. I then plotted using Seaborn as it helped generate the given graph with legend. For graph#3, I grouped it by work location and calculated mean salaries for each borough. With these values, I plotted and styled using Matplotlib.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Citations -->
+    <section id="citations" class="citation-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Citations</h1>
+                    <p>https://data.cityofnewyork.us/City-Government/Citywide-Payroll-Data-Fiscal-Year-/k397-673e
+                    <br>
+                    https://pandas.pydata.org/docs/
+                    <br> 
+                    https://html5-templates.com/
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	
     <!-- jQuery -->

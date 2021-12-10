@@ -6,6 +6,9 @@ html {
     width: 100%;
     height: 100%;
 }
+p {
+	font-size: 24px;
+}
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -42,25 +45,40 @@ html {
     background-color: #337AB7;
     color: #FFF;
 }
-.welcome-section {
+.home-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    /*background: #fff;*/
+    background-image: url("https://dr5dymrsxhdzh.cloudfront.net/blog/images/a10f5651c/2019/02/average-salary-nyc-Beboy_ltd.jpg");
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100%;
 }
-.about-section {
+.overview-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #EFDECD;
 }
-.whatwedo-section {
-    height: 200%;
+.graph-section {
+    height: 300%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
 }
-.contact-section {
+.data-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #EFDECD;
+}
+.technique-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+.citation-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
