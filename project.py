@@ -1,5 +1,6 @@
 """
 Name:  Matthew Ming
+Email: matthew.ming11@myhunter.cuny.edu
 URL: https://public-salary-analysis-ny.herokuapp.com
 Title: Data Analysis of Public Sector Salaries Over Time
 Resources:  Used https://data.cityofnewyork.us/City-Government/Citywide-Payroll-Data-Fiscal-Year-/k397-673e to get data for NYC salaries,

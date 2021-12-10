@@ -69,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Overview</h1>
-                    <p>My underlying hypothesis was that salaries in NYC were gradually increasing over the years and that the impact of the CoVID-19 pandemic would slightly decrease the salaries. To explore this, I used pandas and numpy to preprocess the data and used matplotlib and seaborn to display them as charts and to style the charts. From what I found, my hypothesis was correct, though in the year 2015, the salaries dipped.</p>
+                    <p>My underlying hypothesis was that salaries in NYC were gradually increasing over the years and that the impact of the CoVID-19 pandemic would slightly decrease the salaries. To explore this, I used pandas and numpy to preprocess and clean the data and used matplotlib and seaborn to display them as charts and to style the charts. From what I found, my hypothesis was correct, though in the year 2015, the salaries dipped.</p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Data</h1>
-                    <p>The only data used for the above graphs is the Citywide Payroll Data from NYC Opendata. It contains data detailing payrolls of individuals from multiple different public sectors from each fiscal year from 2014 to 2020, inclusively. Though there was personal identifiable information provided, such as the name of the individual logged, this was not used within my graphs as more focus was placed on their salary and how it changed over time.</p>
+                    <p>The only data used for the above graphs is the Citywide Payroll Data from NYC Opendata. It contains data detailing payrolls of individuals from multiple different public sectors from each fiscal year from 2014 to 2020, inclusively. Though there was personal identifiable information provided, such as the name of each individual logged, this was not used within my graphs as more focus was placed on their salary and how it changed over time. Details such as payroll number was not used as salary was the main focus of visualization.</p>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Techniques</h1>
-                    <p>For all graphs, I processed the data into a dataframe and capitalized all work locations. With graph#1, I grouped it by year and calculated mean salaries for each year. With these values, I plotted and styled using Matplotlib to get a line chart that showed the trend as salaries changed over the years. For graph#2, I created a pivot table using the work locations, year, and salary. With this table, I extracted only the Boroughs needed as they best represent New York City. I then plotted using Seaborn as it helped generate the given graph with legend. For graph#3, I grouped it by work location and calculated mean salaries for each borough. With these values, I plotted and styled using Matplotlib.</p>
+                    <p>For all graphs, I processed the data into a pandas dataframe, capitalized all work locations and styled them in fivethirtyeight. With graph#1, I grouped the dataframe by year and calculated mean salaries for each year. With this information, I used Matplotlib to plot a line chart that showed the trend as salaries changed over the years. For graph#2, I created a pivot table using the work locations, year, and salary of all indivduals. With this table, I extracted only the Boroughs from the work locations as these locations best represent New York City. I then plotted using Seaborn as it helped generate the given graph with legend. For graph#3, I grouped the dataframe by work location, filtered the boroughs from the work locations, and calculated mean salaries for each borough. With this information, I used Matplotlib to plot a bar chart showing how much the average salary was for each borough across all recorded years.</p>
                 </div>
             </div>
         </div>
